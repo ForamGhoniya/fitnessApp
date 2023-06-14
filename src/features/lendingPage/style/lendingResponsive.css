@@ -1,0 +1,32 @@
+@media screen and (max-width: 1300px) {
+  .dashboard-wrapper .text-wrapper h2 {
+    font-size: 40px;
+  }
+  .dashboard-wrapper .text-wrapper p {
+    font-size: 35px;
+    margin: 20px 0 0 0;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .dashboard-wrapper .text-wrapper h2 {
+    font-size: 33px;
+  }
+  .dashboard-wrapper .text-wrapper p {
+    font-size: 30px;
+    margin: 15px 0 0 0;
+  }
+}
+@media screen and (max-width: 852px) {
+  .dashboard-wrapper .text-wrapper {
+    width: 100%;
+    max-width: calc(100% - 20px);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .dashboard-wrapper .text-wrapper h2 {
+    border: none;
+    font-size: 33px;
+  }
+}/*# sourceMappingURL=lendingresponsive.css.map */
