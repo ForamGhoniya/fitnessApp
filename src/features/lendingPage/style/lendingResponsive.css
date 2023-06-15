@@ -29,4 +29,7 @@
     border: none;
     font-size: 33px;
   }
+  .dashboard-wrapper .text-wrapper .button-wrapper .start-button {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=lendingresponsive.css.map */

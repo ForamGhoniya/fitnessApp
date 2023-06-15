@@ -14,10 +14,11 @@ const Lending = () => {
         <div class="text-wrapper">
           <h2>Welcome To The Future of fitness</h2>
           <p>
-            Fitness App
+          Best workouts for you
           </p>
+          <p class="description">You will have everything you need to reach your personal fitness goals - for free!</p>
           <div class="button-wrapper">
-            <button class="start-button" onClick={()=> {navigate('/home')}}>Start<i class="fa-solid fa-person-running"></i></button>
+            <button class="start-button" onClick={()=> {navigate('/home')}}>Get Started <i class="fa-solid fa-person-running"></i></button>
           </div>
           </div>
       </div>

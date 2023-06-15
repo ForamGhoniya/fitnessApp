@@ -41,6 +41,11 @@ $max-width: calc(100% - 20px);
                 border: none;
                 font-size: 33px;
             }
+            .button-wrapper {
+                .start-button {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
