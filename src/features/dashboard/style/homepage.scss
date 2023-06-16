@@ -15,10 +15,26 @@
         margin: auto;
         border-radius: 30px;
 
+        .userDataS {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 300px;
+            height: 25px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 10px;
+
+            .userName {
+                font-size: 18px;
+                color: #b75da4;
+            }
+        }
+
         .fit-activity {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 40%;
             height: 100%;
             border-radius: 20px;
@@ -27,7 +43,7 @@
             p {
                 font-size: 40px;
                 font-weight: 500;
-                color: #6c32c6;
+                color: #b75da4;
                 margin: 0;
             }
             .activity-img {
@@ -49,13 +65,18 @@
             .activity-name {
                 width: 200px;
                 height: 150px;
-                background-color: #f54da7;
+                background-color: #b75da4;
                 color: #ffffff;
                 font-size: 25px;
                 font-weight: 400;
                 border-radius: 10px;
                 margin: 10px;
                 border: none;
+
+                img {
+                    height: 100px;
+                    width: 200px;
+                }
             }
         }
     }

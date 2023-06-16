@@ -17,10 +17,10 @@
         transform: translate(-50%, -50%);
 
         h2 {
-            color: #6c32c6;
+            color: #6d0a58;
             font-size: 50px;
             font-weight: 500;
-            border-bottom: 2px solid #6c32c6;
+            border-bottom: 2px solid #6d0a58;
             margin: 0;
         }
         p {
@@ -38,8 +38,8 @@
 
         .button-wrapper {
             .start-button {
-                background: #6c32c6;
-                border: 3px solid #6c32c6;
+                background: #b75da4;
+                border: 3px solid #b75da4;
                 border-radius: 5px;
                 color: #ffffff;
                 font-size: 18px;
@@ -52,8 +52,8 @@
 
                 &:hover {
                     background: none;
-                    border: 3px solid #6c32c6;
-                    color: #6c32c6;
+                    border: 3px solid #b75da4;
+                    color: #b75da4;
                 }
             }
         }
