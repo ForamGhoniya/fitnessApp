@@ -5,6 +5,11 @@ const ActivityInfo = () => {
     return (
         <>
             <div className="info-wrapper">
+                <div className="Activities">
+                    <div className="claries-burn">
+                    
+                    </div>
+                </div>
                     <div className="chart-wrapper">
                     <App />
                 </div>

@@ -4,39 +4,22 @@
     background-color: #8c5bd041;
 
     .fitness-activity-dash {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: flex-start;
         width: 100%;
         height: 100%;
-        max-width: 95%;
         max-height: 90%;
         background-color: #ffffff5c;
-        margin: auto;
+        margin: 20px;
         border-radius: 30px;
-
-        .userDataS {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 300px;
-            height: 25px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 10px;
-
-            .userName {
-                font-size: 18px;
-                color: #b75da4;
-            }
-        }
 
         .fit-activity {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-between;
-            width: 40%;
-            height: 100%;
+            // width: 40%;
+            // height: 100%;
             border-radius: 20px;
             padding: 10px;
 
@@ -46,36 +29,54 @@
                 color: #b75da4;
                 margin: 0;
             }
+
+            .userDataS {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                width: 200px;
+                height: 25px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                padding: 10px;
+
+                .userName {
+                    font-size: 18px;
+                    color: #b75da4;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .list-activity {
+            display: flex;
+
             .activity-img {
                 width: 100%;
-                height: 400px;
+                height: 500px;
                 background: url(../../../assets/images/singleA.png);
                 background-repeat: no-repeat;
                 background-size: contain;
             }
-        }
-        .list-activity {
-            width: 60%;
-            height: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-
             .activity-name {
-                width: 200px;
-                height: 150px;
-                background-color: #b75da4;
-                color: #ffffff;
-                font-size: 25px;
-                font-weight: 400;
-                border-radius: 10px;
-                margin: 10px;
-                border: none;
-
-                img {
-                    height: 100px;
-                    width: 200px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-content: center;
+                justify-content: center;
+                p {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 150px;
+                    height: 150px;
+                    background-color: #b75da4;
+                    color: #ffffff;
+                    font-size: 25px;
+                    font-weight: 400;
+                    border-radius: 10px;
+                    margin: 10px;
+                    border: none;
                 }
             }
         }
