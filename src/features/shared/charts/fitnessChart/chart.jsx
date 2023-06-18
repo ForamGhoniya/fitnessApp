@@ -38,12 +38,12 @@ export const options = {
         },
 };
 
-const labels = jsonData.activities.slice(0, 6).map((activity) => activity.date);
+const labels = jsonData.activities.map((activity) => activity.date);
 const heartRates = jsonData.activities
-    .slice(0, 6)
+    
     .map((activity) => activity.heart_rate.average);
 const heartRatesMax = jsonData.activities
-    .slice(0, 6)
+    
     .map((activity) => activity.heart_rate.max);
 
 export const data = {
@@ -71,8 +71,6 @@ export function App() {
                 <Line 
                 options={options}
                 data={data}
-                height={300}
-                width={80}
                 />
             );
 }

@@ -4,8 +4,6 @@ import UserLogo from "../../../assets/images/avatar.png";
 import React, { useState } from "react";
 import ReactModal from "react-modal";
 import { Close } from "../../shared/icons/icon";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
 import { App } from "../../shared/charts/fitnessChart/chart";
 
 import running from "../../../assets/images/running.jpg"
@@ -15,13 +13,9 @@ import swimming from "../../../assets/images/swimming.jpg"
 import Hiking from "../../../assets/images/Hiking.jpg"
 import Yoga from "../../../assets/images/Yoga.jpg"
 
+import close from '../../../assets/images/close.png'
+
 const HomePage = () => {
-    const [selectedDate, setSelectedDate] = useState(new Date());
-
-    const handleDateChange = (date) => {
-        setSelectedDate(date);
-    };
-
     const [selectedActivity, setSelectedActivity] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -159,41 +153,63 @@ const HomePage = () => {
             >
                 {selectedActivity && (
                     <>
+                    <div className="main-wrapper">
+                    <div
+                    onClick={closeModal}
+                    className="closeBtn">
+                        <img src={close}/>
+                    {/* <Close /> */}
+                </div>
                         <h2 className="Activity-title">
                             {selectedActivity.name}
                         </h2>
 
-                        <div className="main-wrapper">
+                        <div className="activity-details">
+                            
+                        <div className="activity">
+                            <div className="activity-section">
+                            <div className="activities-wrapper">
+                            <p className="activityTitle">calories_burned:</p> 
+                            <p>{selectedActivity.calories_burned} kcals</p> </div>
+
                         <div className="activities-wrapper">
-                            calories_burned: <br/> {selectedActivity.calories_burned} kcals
-                        </div>
-                        <div className="activities-wrapper">steps: <br/> {selectedActivity.steps} min</div>
-                        <div className="activities-wrapper">distance: <br/> {selectedActivity.distance} min</div>
-                        <div className="activities-wrapper">Duration: <br/> {selectedActivity.duration} min</div>
+                        <p className="activityTitle">steps:</p> 
+                            <p> {selectedActivity.steps} min</p> </div>
+                    
+                        <div className="activities-wrapper">
+                            <p className="activityTitle">distance: </p>
+                            <p>{selectedActivity.distance} min</p></div>
+
+                        <div className="activities-wrapper">
+                            <p className="activityTitle">Duration:</p> 
+                            <p> {selectedActivity.duration} min</p></div>
+
+                        <div className="activities-wrapper">
+                            <p className="activityTitle">Heart-Rate</p> 
+
+                            <p>{selectedActivity.heart_rate.average} pb</p>
+                            </div>     
+
+                        <div className="activities-wrapper">
+                            <p className="activityTitle">elevation-gain</p> 
+
+                            <p>{selectedActivity.elevation_gain}</p>
+                            </div>                            
+
+                            </div>
+                        
                         </div>
 
-                        <div className="calendar-wrapper">
-                            <Calendar
-                                onChange={handleDateChange}
-                                value={selectedDate}
-                                calendarType="US"
-                            />
-                        </div>
-
-                        <div
-                            className="chart"
-                            style={{ height: "300px", width: "400px" }}>
+                        
+                        <div className="chart">
                             <App />
                         </div>
+                        </div>
+                        </div>
+                
                     </>
                 )}
 
-                <div
-                    onClick={closeModal}
-                    className="closeBtn"
-                >
-                    <Close />
-                </div>
             </ReactModal>
         </>
     );

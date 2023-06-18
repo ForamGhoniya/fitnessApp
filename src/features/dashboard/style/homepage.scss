@@ -141,7 +141,6 @@
 
             .averageData {
                 width: 100%;
-                // height: 500px;
                 .averageInfo {
                     max-width: calc(100% - 20px);
                     display: flex;
@@ -188,35 +187,108 @@
 }
 
 .main-wrapper {
-    width: 30%;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(33 150 243 / 7%);
     .Activity-title {
         text-align: center;
-        font-size: 46px;
-        margin: 0;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0 0 30px 0;
     }
 
-    .activities-wrapper {
+    .activity-details {
+        width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 150px;
-        height: 150px;
-        font-size: 18px;
-        background-color: #b75da4;
-        color: #ffffff;
-        margin: 10px;
-        border-radius: 20px;
+        flex-direction: row;
+        align-items: flex-end;
+        .activity {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            margin-left: 20px;
 
-        h3 {
-            margin: 0;
+            .activity-section {
+                display: flex;
+                flex-wrap: wrap;
+                .activities-wrapper {
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 11vw;
+                    background-color: #ae5db770;
+                    color: #000000;
+                    margin: 10px 10px 10px 0px;
+                    border-radius: 10px;
+
+                    .activityTitle {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+                .activities-wrapper-A {
+                    width: 300px;
+                    height: 100px;
+                    background-color: #b75da4;
+                    color: #8c8c8c;
+                    border-radius: 10px;
+                    padding: 10px;
+
+                    .title-A {
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+
+                    .activities-sub-wrapper {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        margin: 10px;
+                        .average {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .chart {
+            width: 50%;
+            height: 465px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            canvas {
+                max-width: 650px;
+                background-color: #ffffff;
+                border-radius: 10px;
+            }
         }
     }
 }
-
 .closeBtn {
-    svg {
-        position: absolute;
-        top: 20px;
-        right: 0;
+    width: 100%;
+    max-width: 30px;
+    height: 30px;
+    float: right;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
     }
 }
