@@ -5,7 +5,10 @@ const jsonData ={
       "email": "johndoe@example.com",
       "age": 30,
       "height": 180,
-      "weight": 75
+      "weight": 75,
+      "calories_burned": 1800,
+      "steps":2300,
+      "heart_rate":150,
     },
     "activities": [
       {

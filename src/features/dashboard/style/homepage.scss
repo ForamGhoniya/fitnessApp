@@ -1,84 +1,222 @@
 .dashboard-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     background-color: #8c5bd041;
 
     .fitness-activity-dash {
-        // display: flex;
-        // justify-content: space-around;
-        // align-items: flex-start;
-        width: 100%;
+        width: 20%;
         height: 100%;
-        max-height: 90%;
-        background-color: #ffffff5c;
-        margin: 20px;
-        border-radius: 30px;
+        background-color: #ffffff;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
 
         .fit-activity {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            // width: 40%;
-            // height: 100%;
+            align-items: center;
             border-radius: 20px;
+            padding: 15px;
+
+            .headingText {
+                p {
+                    font-size: 40px;
+                    font-weight: 500;
+                    color: #b75da4;
+                }
+            }
+
+            .list-activity {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+
+                .imgWrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    .activityImg {
+                        height: 40px;
+                        width: 40px;
+                        margin-right: 15px;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 30px;
+                        }
+                    }
+                    p {
+                        color: #b75da4;
+                        font-size: 20px;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .userData {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        height: 90%;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        .userProfile {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 100%;
+            height: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
             padding: 10px;
 
-            p {
-                font-size: 40px;
-                font-weight: 500;
-                color: #b75da4;
-                margin: 0;
-            }
-
-            .userDataS {
+            .userInfo-wrapper {
                 display: flex;
-                align-items: center;
-                justify-content: start;
-                width: 200px;
-                height: 25px;
-                background-color: #ffffff;
-                border-radius: 10px;
-                padding: 10px;
-
-                .userName {
+                flex-direction: column;
+                p {
                     font-size: 18px;
                     color: #b75da4;
-                    padding-left: 10px;
+                    padding-left: 20px;
+                    margin: 0;
+                }
+
+                .userName {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                .userEmail {
+                    font-size: 15px;
                 }
             }
         }
 
-        .list-activity {
-            display: flex;
+        .userInfo-main {
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
 
-            .activity-img {
-                width: 100%;
-                height: 500px;
-                background: url(../../../assets/images/singleA.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-            .activity-name {
+            .userInfo {
                 display: flex;
-                flex-wrap: wrap;
                 flex-direction: row;
-                align-content: center;
-                justify-content: center;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 18px;
+                color: #b75da4;
+
                 p {
+                    margin: 0;
+                }
+
+                .Info {
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    width: 150px;
-                    height: 150px;
-                    background-color: #b75da4;
-                    color: #ffffff;
-                    font-size: 25px;
-                    font-weight: 400;
-                    border-radius: 10px;
                     margin: 10px;
-                    border: none;
+                    padding-right: 30px;
+                    border-right: 1px solid #b75da4;
+
+                    &:last-child {
+                        padding-right: 0;
+                        border-right: none;
+                    }
+
+                    .key {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .averageData {
+                width: 100%;
+                // height: 500px;
+                .averageInfo {
+                    max-width: calc(100% - 20px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: #b75da4;
+                    font-size: 18px;
+                    background-color: #c0eef973;
+                    margin: 20px 0;
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    .Data {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
                 }
             }
         }
+    }
+
+    .About {
+        width: 50%;
+        height: 100%;
+        color: #b75da4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px;
+
+        .activity-img {
+            width: 100%;
+            height: 290px;
+            background: url(../../../assets/images/singleA.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+.main-wrapper {
+    width: 30%;
+    .Activity-title {
+        text-align: center;
+        font-size: 46px;
+        margin: 0;
+    }
+
+    .activities-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        font-size: 18px;
+        background-color: #b75da4;
+        color: #ffffff;
+        margin: 10px;
+        border-radius: 20px;
+
+        h3 {
+            margin: 0;
+        }
+    }
+}
+
+.closeBtn {
+    svg {
+        position: absolute;
+        top: 20px;
+        right: 0;
     }
 }
