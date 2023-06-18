@@ -3,7 +3,6 @@ import jsonData from "../json/fitness";
 import UserLogo from "../../../assets/images/avatar.png";
 import React, { useState } from "react";
 import ReactModal from "react-modal";
-import { Close } from "../../shared/icons/icon";
 import { App } from "../../shared/charts/fitnessChart/chart";
 
 import running from "../../../assets/images/running.jpg"
