@@ -1,0 +1,10 @@
+.info-wrapper .chart-wrapper {
+  width: 700px;
+  height: 400px;
+  background-color: rgba(140, 91, 208, 0.2549019608);
+  border-radius: 10px;
+}
+.info-wrapper .chart-wrapper canvas {
+  width: 700px !important;
+  height: 400px !important;
+}/*# sourceMappingURL=info.css.map */

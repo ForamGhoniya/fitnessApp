@@ -1,2 +1,196 @@
+@media screen and (max-width: 1440px) {
+    .main-wrapper {
+        height: 100vh;
+        .activity-details {
+            .activity {
+                padding: 10px;
+            }
+            .chart {
+                padding: 10px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1300px) {
+    .dashboard-wrapper {
+        .userData {
+            .userInfo-main {
+                .userInfo {
+                    flex-direction: column;
+
+                    .Info {
+                        border-right: none;
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            .averageData {
+                font-size: 16px;
+                .averageInfo {
+                    font-size: 18px;
+                }
+            }
+
+            .userProfile {
+                .userInfo-wrapper {
+                    .userEmail {
+                        font-size: 12px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dashboard-wrapper {
+        .userData {
+            .userInfo-main {
+                .averageData {
+                    .averageInfo {
+                        .Data {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-wrapper {
+        height: 100vh;
+        .Activity-title {
+            margin: 0 0 20px 0;
+        }
+        .activity-details {
+            display: flex;
+            justify-content: center;
+            .activity {
+                max-width: calc(100% - 20px);
+                align-items: center;
+                padding: 0 10px 0 0;
+                .activity-section {
+                    .activities-wrapper {
+                        width: 7vw;
+
+                        .activityTitle {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .blog {
+                    margin-bottom: 20px;
+                    .activity-blog {
+                        h2 {
+                            margin: 0;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .dashboard-wrapper {
+        .fitness-activity-dash {
+            .fit-activity {
+                .headingText {
+                    p {
+                        font-size: 30px;
+                    }
+                }
+
+                .list-activity {
+                    .imgWrapper {
+                        p {
+                            font-size: 18px;
+                        }
+                        .activityImg {
+                            height: 35px;
+                            width: 35px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .userData {
+        .userProfile {
+            .userInfo-wrapper {
+                .userEmail {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-wrapper {
+        background-color: #ffffff;
+        height: 100%;
+        .activity-details {
+            flex-direction: column;
+
+            .activity {
+                width: 90%;
+                margin-bottom: 20px;
+                .blog {
+                    .activity-blog {
+                        text-align: center;
+                    }
+                }
+
+                .activity-section {
+                    .activities-wrapper {
+                        width: 17vw;
+                    }
+                }
+            }
+
+            .chart {
+                width: 90%;
+                height: 400px;
+            }
+        }
+    }
+
+    .dashboard-wrapper {
+        .userData {
+            .userProfile {
+                .userInfo-wrapper {
+                    .userEmail {
+                        font-size: 10px;
+                        padding-left: 8px;
+                    }
+                    .userName {
+                        font-size: 18px;
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-wrapper {
+        .activity-details {
+            .activity {
+                .blog {
+                    .activity-blog {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

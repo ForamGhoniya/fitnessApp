@@ -1,1 +1,115 @@
-/*# sourceMappingURL=homepageresponsive.css.map */
+@media screen and (max-width: 1440px) {
+  .main-wrapper {
+    height: 100vh;
+  }
+  .main-wrapper .activity-details .activity {
+    padding: 10px;
+  }
+  .main-wrapper .activity-details .chart {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .dashboard-wrapper .userData .userInfo-main .userInfo {
+    flex-direction: column;
+  }
+  .dashboard-wrapper .userData .userInfo-main .userInfo .Info {
+    border-right: none;
+    padding-right: 0;
+  }
+  .dashboard-wrapper .userData .averageData {
+    font-size: 16px;
+  }
+  .dashboard-wrapper .userData .averageData .averageInfo {
+    font-size: 18px;
+  }
+  .dashboard-wrapper .userData .userProfile .userInfo-wrapper .userEmail {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .dashboard-wrapper .userData .userInfo-main .averageData .averageInfo .Data {
+    font-size: 18px;
+  }
+  .main-wrapper {
+    height: 100vh;
+  }
+  .main-wrapper .Activity-title {
+    margin: 0 0 20px 0;
+  }
+  .main-wrapper .activity-details {
+    display: flex;
+    justify-content: center;
+  }
+  .main-wrapper .activity-details .activity {
+    max-width: calc(100% - 20px);
+    align-items: center;
+    padding: 0 10px 0 0;
+  }
+  .main-wrapper .activity-details .activity .activity-section .activities-wrapper {
+    width: 7vw;
+  }
+  .main-wrapper .activity-details .activity .activity-section .activities-wrapper .activityTitle {
+    font-size: 15px;
+  }
+  .main-wrapper .activity-details .activity .blog {
+    margin-bottom: 20px;
+  }
+  .main-wrapper .activity-details .activity .blog .activity-blog h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 852px) {
+  .dashboard-wrapper .fitness-activity-dash .fit-activity .headingText p {
+    font-size: 30px;
+  }
+  .dashboard-wrapper .fitness-activity-dash .fit-activity .list-activity .imgWrapper p {
+    font-size: 18px;
+  }
+  .dashboard-wrapper .fitness-activity-dash .fit-activity .list-activity .imgWrapper .activityImg {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+  }
+  .userData .userProfile .userInfo-wrapper .userEmail {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    background-color: #ffffff;
+    height: 100%;
+  }
+  .main-wrapper .activity-details {
+    flex-direction: column;
+  }
+  .main-wrapper .activity-details .activity {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .main-wrapper .activity-details .activity .blog .activity-blog {
+    text-align: center;
+  }
+  .main-wrapper .activity-details .activity .activity-section .activities-wrapper {
+    width: 17vw;
+  }
+  .main-wrapper .activity-details .chart {
+    width: 90%;
+    height: 400px;
+  }
+  .dashboard-wrapper .userData .userProfile .userInfo-wrapper .userEmail {
+    font-size: 10px;
+    padding-left: 8px;
+  }
+  .dashboard-wrapper .userData .userProfile .userInfo-wrapper .userName {
+    font-size: 18px;
+    padding-left: 8px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-wrapper .activity-details .activity .blog .activity-blog p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=homepageresponsive.css.map */

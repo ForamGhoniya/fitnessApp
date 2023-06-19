@@ -1,4 +1,5 @@
 import "../../dashboard/style/homepage.scss";
+import '../../dashboard/style/homepageresponsive.scss'
 import jsonData from "../json/fitness";
 import UserLogo from "../../../assets/images/avatar.png";
 import React, { useState } from "react";
@@ -91,33 +92,33 @@ const HomePage = () => {
 
                     <div className="userInfo">
                         <div className="Info">
-                        <p className="key">Age</p>
-                        <p>{jsonData.user.age}</p>
+                        <p className="key">Age:</p>
+                        <p>{jsonData.user.age} Yr</p>
                         </div>
 
                         <div className="Info">
-                        <p className="key">Height</p>
-                        <p>{jsonData.user.height}</p>
+                        <p className="key">Height:</p>
+                        <p>{jsonData.user.height} Cm</p>
                         </div>
 
                         <div className="Info">
-                        <p className="key">Width</p>
-                        <p>{jsonData.user.weight}</p>
+                        <p className="key">Width:</p>
+                        <p>{jsonData.user.weight} Kg</p>
                         </div>
                     </div>
                     <div className="averageData">
                     <div className="averageInfo">
-                        <p className="Data">calories burned : </p>
+                        <p className="Data">Calories burned : </p>
                         <p> {jsonData.user.calories_burned}</p>
                         </div>
 
                         <div className="averageInfo">
-                        <p className="Data">steps : </p>
+                        <p className="Data">Steps : </p>
                         <p> {jsonData.user.steps}</p>
                         </div>
 
                         <div className="averageInfo">
-                        <p className="Data">heart_rate : </p>
+                        <p className="Data">Heart rate : </p>
                         <p> {jsonData.user.heart_rate}</p>
                         </div>
 
@@ -157,7 +158,6 @@ const HomePage = () => {
                     onClick={closeModal}
                     className="closeBtn">
                         <img src={close}/>
-                    {/* <Close /> */}
                 </div>
                         <h2 className="Activity-title">
                             {selectedActivity.name}
@@ -166,6 +166,14 @@ const HomePage = () => {
                         <div className="activity-details">
                             
                         <div className="activity">
+
+                        <div className="blog">
+                            <div className="activity-blog">
+                                <h2>Boost Your Fitness with a Activity App</h2>
+                                <p>In our busy lives, finding time for fitness can be a challenge. Thankfully, fitness activity applications are here to help. These apps are designed to make staying fit easier and more enjoyable. Let's explore the benefits of using a fitness activity app.</p>
+                            </div>
+                        </div>
+
                             <div className="activity-section">
                             <div className="activities-wrapper">
                             <p className="activityTitle">calories_burned:</p> 
