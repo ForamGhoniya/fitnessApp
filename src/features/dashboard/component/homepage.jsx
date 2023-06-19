@@ -52,8 +52,8 @@ const HomePage = () => {
                             <div className="list-activity">
                                     {jsonData.activities
                                         .slice(0, 6)
-                                        .map((activity) => (
-                                            <div className="imgWrapper">
+                                        .map((activity,index) => (
+                                            <div className="imgWrapper" key={index}>
                                                 <div className="activityImg">
 
                                                 <img src={ImageMapper[activity.name]}/>
@@ -179,7 +179,7 @@ const HomePage = () => {
                             <p className="activityTitle">calories_burned:</p> 
                             <p>{selectedActivity.calories_burned} kcals</p> </div>
 
-                        <div className="activities-wrapper">
+                        <div className="activities-wrapper">    
                         <p className="activityTitle">steps:</p> 
                             <p> {selectedActivity.steps} min</p> </div>
                     
