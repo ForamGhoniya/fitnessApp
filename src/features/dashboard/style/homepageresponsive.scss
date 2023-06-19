@@ -179,17 +179,56 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 425px) {
     .main-wrapper {
         .activity-details {
             .activity {
                 .blog {
-                    .activity-blog {
-                        p {
-                            font-size: 15px;
+                    height: 250px;
+                    margin-bottom: 0;
+                    padding: 0;
+                }
+            }
+        }
+        .chart {
+            width: 100%;
+        }
+    }
+
+    .dashboard-wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+
+        .fitness-activity-dash {
+            width: 50%;
+        }
+        .userData {
+            width: 40%;
+
+            .userInfo-main {
+                .userInfo {
+                    .Info {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin: 3px;
+                        .key {
+                            margin-bottom: 0;
                         }
                     }
                 }
+            }
+        }
+
+        .About {
+            width: 90%;
+            padding-top: 20px;
+            .activity-desc {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .activity-img {
+                background-position: center;
             }
         }
     }
